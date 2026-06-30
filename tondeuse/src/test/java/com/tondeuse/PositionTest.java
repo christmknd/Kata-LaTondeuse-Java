@@ -1,4 +1,4 @@
-package com;
+package com.tondeuse;
 
 import org.junit.Test;
 
