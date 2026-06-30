@@ -19,13 +19,4 @@ public class Position {
     public int getY() {
         return y;
     }
-
-    // setters
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    public void setY(int y) {
-        this.y = y;
-    }
 }
