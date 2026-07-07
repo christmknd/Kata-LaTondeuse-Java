@@ -44,4 +44,29 @@ public class Mower {
 
     }
 
+    public void executeInstructions(String instructions) {
+
+        for (char instruction : instructions.toCharArray()) {
+
+            switch (instruction) {
+
+                case 'G':
+                    turnLeft();
+                    break;
+
+                case 'D':
+                    turnRight();
+                    break;
+
+                case 'A':
+                    move();
+                    break;
+
+                default:
+                    throw new IllegalArgumentException(
+                            "Unknown instruction : " + instruction);
+            }
+        }
+    }
+
 }
