@@ -24,7 +24,7 @@ J'ai choisi d'approcher le projet de la façon suivante : une classe = une tâch
 
 ## Technologies
 
-- Java
+- Java 17
 - Maven
 - JUnit
 
