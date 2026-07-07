@@ -27,7 +27,6 @@ public class Mower {
     // methods
 
     public void turnLeft() {
-
         orientation = orientation.left();
     }
 

@@ -1,5 +1,7 @@
 package com.tondeuse.enums;
 
+import com.tondeuse.Position;
+
 public enum Orientation {
 
     N, S, E, W;
@@ -44,6 +46,31 @@ public enum Orientation {
 
             default:
                 throw new IllegalStateException("Unknown orientation");
+        }
+    }
+
+    public Position nextPosition(Position position) {
+
+        switch (this) {
+
+            case N:
+                return new Position(position.getX(),
+                        position.getY() + 1);
+
+            case E:
+                return new Position(position.getX() + 1,
+                        position.getY());
+
+            case S:
+                return new Position(position.getX(),
+                        position.getY() - 1);
+
+            case W:
+                return new Position(position.getX() - 1,
+                        position.getY());
+
+            default:
+                throw new IllegalStateException();
         }
     }
 }
