@@ -34,4 +34,14 @@ public class Mower {
         orientation = orientation.right();
     }
 
+    public void move() {
+
+        Position nextPosition = orientation.nextPosition(position);
+
+        if (lawn.isPositionValid(nextPosition)) {
+            position = nextPosition;
+        }
+
+    }
+
 }
