@@ -12,4 +12,5 @@ public class OrientationTest {
     public void shouldTurnLeftFromNorthToWest() {
         assertEquals(Orientation.W, Orientation.N.left());
     }
+
 }

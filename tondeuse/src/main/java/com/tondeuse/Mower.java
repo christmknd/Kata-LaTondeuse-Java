@@ -28,10 +28,11 @@ public class Mower {
 
     public void turnLeft() {
 
+        orientation = orientation.left();
     }
 
     public void turnRight() {
-
+        orientation = orientation.right();
     }
 
 }

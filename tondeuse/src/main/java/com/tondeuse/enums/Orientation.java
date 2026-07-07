@@ -26,4 +26,24 @@ public enum Orientation {
 
     }
 
+    public Orientation right() {
+
+        switch (this) {
+
+            case N:
+                return E;
+
+            case E:
+                return S;
+
+            case S:
+                return W;
+
+            case W:
+                return N;
+
+            default:
+                throw new IllegalStateException("Unknown orientation");
+        }
+    }
 }
