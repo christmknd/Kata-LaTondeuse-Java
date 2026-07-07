@@ -21,4 +21,21 @@ public class MowerTest {
         assertEquals(orientation, mower.getOrientation());
     }
 
+    @Test
+    public void shouldExecuteInstructions() {
+
+        Lawn lawn = new Lawn(5, 5);
+
+        Mower mower = new Mower(
+                new Position(3, 3),
+                Orientation.E,
+                lawn);
+
+        mower.executeInstructions("AADAADADDA");
+
+        assertEquals(5, mower.getPosition().getX());
+        assertEquals(1, mower.getPosition().getY());
+        assertEquals(Orientation.E, mower.getOrientation());
+    }
+
 }
